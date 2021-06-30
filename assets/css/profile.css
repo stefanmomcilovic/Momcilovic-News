@@ -1,0 +1,109 @@
+@font-face {
+    font-family: DMMono-Regular;
+    src: url(../fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playball-Regular;
+    src: url(../fonts/Playball-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-family: DMMono-Regular, sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+img {
+    width: 10%;
+}
+
+a {
+    text-align: center;
+}
+
+.name {
+    font-family: Playball-Regular, sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+    cursor: pointer;
+    color: #444343;
+}
+
+.name:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.dateJoined {
+    color: #848484;
+}
+
+.information {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.info {
+    border: 1px solid #000;
+    padding: 5em;
+    margin-right: 1em;
+    box-shadow: -2px -1px 18px 2px black;
+    text-align: center;
+    width: 100%;
+}
+
+.btnPost {
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+.btnPost:hover {
+    background: #ddd;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .information {
+        display: block !important;
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (max-width:991px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .information {
+        display: block !important;
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 1.5em;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

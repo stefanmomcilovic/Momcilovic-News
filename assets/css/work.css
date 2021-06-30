@@ -1,0 +1,101 @@
+@font-face {
+    font-family: DMMono-Regular;
+    src: url(../fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playball-Regular;
+    src: url(../fonts/Playball-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-family: DMMono-Regular, sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+img{
+    width: 10%;
+}
+
+a{
+    text-align: center;
+}
+
+.workwithus {
+    background-image: url("../images/workwithus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactus {
+    background-image: url("../images/contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100vh;
+}
+
+.work input[type="text"],
+.work input[type="email"] {
+    width: 500px;
+    margin-bottom: 1.4em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 12px 1px black;
+}
+
+.work textarea {
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px 1px black;
+    padding: 10px;
+}
+
+.workbtn {
+    margin-top: 1em;
+    width: 120px;
+    height: 50px;
+    box-shadow: 1px 1px 12px 1px black;
+}
+
+
+@media (max-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .work input[type="text"],
+    .work input[type="email"] {
+        width: 80%;
+    }
+
+    .work textarea {
+        width: 90%;
+    }
+}

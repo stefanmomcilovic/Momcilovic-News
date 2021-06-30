@@ -1,0 +1,137 @@
+@font-face {
+    font-family: DMMono-Regular;
+    src: url(../fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playball-Regular;
+    src: url(../fonts/Playball-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-family: DMMono-Regular, sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #333;
+}
+
+img {
+    width: 10%;
+}
+
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-post {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 444px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 5px;
+}
+
+.heading {
+    width: 1000px !important;
+    height: 50px !important;
+    transition: all 1s ease;
+}
+
+textarea {
+    resize: both;
+    width: 420px;
+    height: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px black;
+}
+
+.description {
+    width: 1000px;
+    height: 215px;
+    transition: all 1s ease;
+}
+
+#notes-preview {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+select {
+    width: 220px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn-post {
+    color: #000;
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 2px 1px #ddd;
+    cursor: pointer;
+}
+
+.btn-post:hover {
+    background-color: #ddd;
+}
+
+.msgsuccess{
+    text-align: center;
+    color: green;
+}
+
+.msgfaild{
+    color: red;
+    text-align: center;
+}
+
+@media (max-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .form-post {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100% !important;
+    }
+
+    textarea {
+        width: 100% !important;
+    }
+
+    #remaining-chars{
+        margin-left: 0 !important;
+    }
+}

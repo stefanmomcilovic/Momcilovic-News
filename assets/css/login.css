@@ -1,0 +1,82 @@
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.registerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.forml {
+    border: 1px solid #dadada;
+    padding: 150px;
+    border-radius: 5px;
+    margin-top: 4rem;
+}
+
+.formr {
+    border: 1px solid #dadada;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 5px;
+    border-top: none;
+}
+
+img {
+    width: 10%;
+}
+
+a {
+    text-align: center;
+}
+
+.forml input[type="email"],
+.forml input[type="password"],
+.forml input[type="text"] {
+    width: 320px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formr input[type="email"],
+.formr input[type="password"],
+.formr input[type="text"] {
+    width: 320px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.register {
+    margin-left: 4rem;
+}
+
+
+@media (max-width:961px) {
+
+    .loginForm,
+    .forml,
+    .formr {
+        width: 100%;
+        padding: 0;
+        border: none;
+        text-align: center;
+    }
+
+    .formr {
+        margin-top: 1rem;
+    }
+
+    .register {
+        margin-left: 0;
+    }
+}

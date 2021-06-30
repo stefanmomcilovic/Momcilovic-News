@@ -1,0 +1,400 @@
+@font-face {
+    font-family: DMMono-Regular;
+    src: url(../fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playball-Regular;
+    src: url(../fonts/Playball-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-family: DMMono-Regular, sans-serif;
+    font-weight: normal;
+}
+
+.mainContainer {
+    padding: 0 10rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.img-fluid{
+    max-width: 80%;
+}
+
+.sandwitch {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.sandwitch:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-2px, -0px);
+    transform: rotate(45deg) translate(-2px, -4px);
+}
+
+.search {
+    border: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.breakLeft {
+    margin-left: 2rem;
+}
+
+.searchForm {
+    display: inline;
+}
+
+.searchValue {
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 320px;
+    position: relative;
+}
+
+.searchValue:focus {
+    outline: none;
+}
+
+.goSearch {
+    margin-left: -10px;
+    height: 30px;
+    border: 1px solid #ddd;
+    padding-left: 4px;
+    padding-right: 5px;
+    position: absolute;
+}
+
+.goSearch:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.hideInputs {
+    display: none !important;
+    transition: 0.10s;
+}
+
+.inputs {
+    display: inline-block;
+}
+
+.loginRight {
+    float: right;
+
+}
+
+.login {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.login:hover {
+    background: #ddd;
+}
+
+.post {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.post:hover {
+    background: #ddd;
+}
+
+.brand-txt {
+    font-size: 72px;
+    text-align: center;
+    font-family: Playball-Regular, serif;
+    font-weight: normal;
+}
+
+.black_hr {
+    background-color: #000;
+
+
+}
+
+.dbl_hr {
+    margin-bottom: -15px;
+    border-color: #000;
+    border-width: 2px;
+}
+
+.gray_hr {
+    border-color: #ddd;
+    margin-bottom: -12px;
+}
+
+.provide_categories a {
+    margin-left: 1.8em;
+}
+
+.sidenav {
+    float: left;
+    width: 13%;
+    background-color: #fafafa;
+    z-index: 10;
+    padding: 15px;
+    left: 0;
+    height: 100vh;
+    box-shadow: 1px 0.5px 10px 0.5px black;
+    transition: 0.10s;
+    overflow: hidden;
+}
+
+.sidenav a {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mainNews,
+.leftImageSection,
+.otherSections,
+.leftSection {
+    margin-left: 2%;
+}
+
+.otherSections {
+    text-align: center;
+}
+
+.sectionsNews img{
+    width: 60%;
+}
+
+.sectionContent {
+    margin-left: 2em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ago {
+    color: #dadada;
+    font-size: 12px;
+}
+
+.footerMenu {
+    text-align: center;
+}
+
+.footerMenu .last {
+    font-size: 11px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #6d6c6c;
+    transition: 0.8s ease;
+}
+
+.otherSectionsImg {
+    width: 350px;
+}
+
+@media screen and(max-width:480px) {
+    .otherSectionsImg {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainContainer {
+        padding: 0;
+    }
+
+    .mainNews,
+    .leftImageSection,
+    .otherSections,
+    .leftSection {
+        margin-left: 0%;
+    }
+
+    .sectionContent {
+        margin-left: 0em;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .img-fluid {
+        max-width: 60%;
+    }
+
+    .otherSectionsImg {
+        width: 407px;
+    }
+
+    .gray_hr {
+        border-color: #ddd;
+
+    }
+
+    .footerMenu .last {
+        justify-content: center;
+        font-size: 11px;
+    }
+
+    .sidenav {
+        float: left;
+        width: 37%;
+        background-color: #fafafa;
+        z-index: 1;
+        padding: 15px;
+        padding-top: 13px;
+        left: 0;
+        height: 100%;
+        box-shadow: 1px 0.5px 10px 0.5px black;
+    }
+
+    .sidenav a {
+        display: block;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .sandwitch {
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .sandwitch:hover {
+        background-color: #fafafa;
+        cursor: pointer;
+    }
+
+    .breakLeft {
+        margin-left: 0;
+    }
+
+    .search {
+        border: none;
+        background: transparent;
+        padding: 5px;
+        margin-left: 7%;
+    }
+
+    .searchForm {
+        top: 0;
+    }
+
+    .searchValue {
+        padding: 3px;
+        border: 1px solid #ddd;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 216px;
+        position: relative;
+        margin-left: -1rem;
+    }
+
+    .login {
+        background-color: #f8f8f8;
+        cursor: pointer;
+        margin-left: 30%;
+    }
+
+    .login:hover {
+        background: #ddd;
+    }
+
+    #Navmenu {
+        display: none;
+    }
+
+    #offset {
+        margin-left: 30%;
+    }
+
+    #TodayPaper {
+        margin-top: -1.5em;
+    }
+
+    #BtnLogin {
+        margin-top: -3.5em;
+    }
+
+    .HideSearch {
+        display: none;
+    }
+}
